@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92.3vh;
+  width: 100%;
+  background-color: #10222c;
+}
+
+.mycontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("../../assets/chat.jpg");
+  background-size: cover;
+
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .outerContainer {
+    height: 91.2vh;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}

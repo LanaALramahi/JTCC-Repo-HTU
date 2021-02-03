@@ -1,0 +1,20 @@
+.cardCustom:hover {
+  transition: all ease 0.3s;
+  filter: brightness(70%);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 90vh;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+}

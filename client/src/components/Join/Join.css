@@ -1,0 +1,87 @@
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 92vh;
+  align-items: center;
+  background:
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4)
+    ),
+    /* bottom, image */ url(../../assets/loginbg.jpg);
+  background-size: cover;
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #1d4e1d;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 92vh;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+  .joinInnerContainer {
+    width: 80%;
+  }
+}
+@media (min-width: 720px) and (max-width: 1400px) {
+  .joinInnerContainer {
+    width: 50%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
