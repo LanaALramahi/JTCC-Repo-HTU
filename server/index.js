@@ -1,7 +1,11 @@
 require("dotenv").config();
+
 const express = require("express");
+
 const parser = require("body-parser");
+
 const mongoose = require("mongoose");
+
 const { addUser, removeUser, getUser, getUsersInRoom } = require("./users");
 
 const app = express();
@@ -12,6 +16,7 @@ const router = require("./router");
 const cRoute = require("./routes/auth");
 app.use("/", router);
 app.use("/jtcc", cRoute);
+
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);

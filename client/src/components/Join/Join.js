@@ -26,17 +26,6 @@ export default function SignIn() {
             type="text"
             onChange={(event) => setRoom(event.target.value)}
           />
-          {/* <select
-            onChange={(event) => setRoom(event.target.value)}
-            className="joinInput mt-20"
-            
-            defaultValue="Choose..."
-          >
-            <option>JavaScript</option>
-            <option>ReactJS</option>
-            <option>ICT Upskilling</option>
-            <option>NodeJS</option>
-          </select> */}
         </div>
         <Link
           onClick={(e) => (!name || !room ? e.preventDefault() : null)}

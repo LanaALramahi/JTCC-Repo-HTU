@@ -51,7 +51,7 @@ auth.post("/register", async (req, res) => {
     if (savedUser)
       res.status(200).json({
         user: savedUser._id,
-        redirect: "/discussion",
+        redirect: "/community",
         step: 1,
         message: "success",
       });
@@ -102,7 +102,7 @@ auth.post("/login", async (req, res) => {
   res.header("auth-token", token);
   res.status(200).json({
     user: user._id,
-    redirect: "/discussion",
+    redirect: "/community",
     step: 1,
     message: "success",
   });

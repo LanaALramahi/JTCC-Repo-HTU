@@ -25,7 +25,7 @@ const Login = () => {
         .then(function (response) {
           if (response.status === 400) console.log(response.status);
           //   alert(response.data.message);
-          if (response.data.step === 1) window.location = "/discussion";
+          if (response.data.step === 1) window.location = "/community";
           //   } else if (response.data.step === "0") {
           //     alert(response.data.message);
           //   }

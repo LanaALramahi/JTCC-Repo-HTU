@@ -30,7 +30,13 @@ const Footer = () => {
                   <a href="#blog">Blog</a>
                 </li>
                 <li>
-                  <a href="#portfolio">Portfolio</a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://lanaalramahi.github.io/my-portfolio/"
+                  >
+                    Portfolio
+                  </a>
                 </li>
               </ul>
             </div>
@@ -49,7 +55,11 @@ const Footer = () => {
           <div className="row ">
             <div className="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
               <p className="social text-muted mb-0 pb-0 bold-text">
-                <a href="http://www.github.com/LanaALramahi" target="_blank">
+                <a
+                  href="http://www.github.com/LanaALramahi"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     alt="social1"
                     src={github}
@@ -59,6 +69,7 @@ const Footer = () => {
                 <a
                   href="http://www.linkedin.com/in/lana-t-alramahi/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     alt="social2"

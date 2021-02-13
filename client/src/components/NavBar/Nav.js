@@ -13,6 +13,8 @@ import DGroups from "../DiscussionGroups/DiscussionGroups";
 import Footer from "../Footer/Footer";
 import Accounts from "../Login/Accounts";
 
+import Feed from "../CommunityPost/Feed";
+
 const MainNav = () => {
   return (
     <div>
@@ -83,6 +85,8 @@ const MainNav = () => {
         <Route path="/chat" component={Chat} />
         <Route path="/discussion" component={DGroups} />
         <Route path="/new" component={Accounts} />
+        <Route path="/community" component={Feed} />
+
         <Footer />
       </Router>
     </div>

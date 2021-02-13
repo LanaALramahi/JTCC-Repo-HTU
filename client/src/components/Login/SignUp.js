@@ -59,7 +59,7 @@ const SignUp = () => {
           onChange={handleNameChange}
           type="text"
           className="form-control"
-          placeholder="name"
+          placeholder="Your name"
         />
       </div>
 
